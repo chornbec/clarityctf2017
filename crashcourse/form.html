@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="validation.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		function validateForm() {
+    		var x = document.forms["myForm"]["firstname1"].value;
+    		alert(x);
+    		if (x == "") {
+        		alert("Name must be filled out");
+        		return false;
+    }
+}
+	</script>
+
+
+</head>
+
+<body>
+
+<form name="myForm" action="C:\Users\Corey Hornbeck\Documents\ACM\clarityctf2017\crashcourse\action_page.php" onsubmit="return validateForm()" method="POST">
+  <fieldset>
+    <legend>Your Information:</legend>
+    First name:<br>
+    <input type="text" name="firstname1" value="" required>
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname1" value="" required>
+    <br>
+    Physical Address:<br>
+    <input type="text" name="address1" value="" required>
+    <br>
+    Phone Number:<br>
+    <input type="text" name="phone1" value="" required>
+    <br>
+    Email Address:<br>
+    <input type="text" name="email1" value="">
+    <br>
+    Make, model and year of the car:<br>
+    <input type="text" name="mmy1" value="" required>
+    <br>
+    License Plate Number:<br>
+    <input type="text" name="lpn1" value="">
+    <br>
+    Insurance Carrier:<br>
+    <input type="text" name="insurance1" value="">
+    <br>
+    Insurance Policy Number:<br>
+    <input type="text" name="ipn1" value="">
+    <br>
+  </fieldset>
+
+<br>
+
+  <fieldset>
+    <legend>Your Information:</legend>
+    First name:<br>
+    <input type="text" name="firstname2" value="" required>
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname2" value="" required>
+    <br>
+    Physical Address:<br>
+    <input type="text" name="address2" value="" required>
+    <br>
+    Phone Number:<br>
+    <input type="text" name="phone2" value="" required>
+    <br>
+    Email Address:<br>
+    <input type="text" name="email2" value="">
+    <br>
+    Make, model and year of the car:<br>
+    <input type="text" name="mmy2" value="" required>
+    <br>
+    License Plate Number:<br>
+    <input type="text" name="lpn2" value="">
+    <br>
+    Insurance Carrier:<br>
+    <input type="text" name="insurance2" value="">
+    <br>
+    Insurance Policy Number:<br>
+    <input type="text" name="ipn2" value="">
+    <br>
+  </fieldset>
+
+<br>
+
+  <fieldset>
+    <legend>Officer Information:</legend>
+    Name:<br>
+    <input type="text" name="firstname3" value="">
+    <br>
+    Badge or ID Number:<br>
+    <input type="text" name="badgeNum" value="">
+    <br>
+    Phone Number:<br>
+    <input type="text" name="phone3" value="">
+    <br>
+    Police Report Number:<br>
+    <input type="text" name="prn" value="">
+    <br>
+  </fieldset>
+<br>
+  <fieldset>
+    <legend>Additional Information:</legend>
+    Photo of Accident:<br>
+    <input type="file" name="pic" accept="image/*">
+    <br>
+    Accident Location:<br>
+    <input type="text" name="location" value="">
+    <br>
+    Other's Involved in Accident (separate with comma):<br>
+    <input type="text" name="names" value="">
+    <br>
+  </fieldset>
+
+
+
+<br>
+
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
